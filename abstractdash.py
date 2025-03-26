@@ -9,6 +9,12 @@ import numpy as np
 # Load environment variables from .env file
 load_dotenv()
 
+st.set_page_config(
+    page_title="Calls Sentiment Score",
+    page_icon="✨",
+    layout="wide",  # Use a wide layout for the app
+)
+
 # Function to connect to Salesforce and execute SOQL query
 def connect_to_salesforce_and_run_query():
     """Connect to Salesforce and execute SOQL query for Abstrakt Summary."""
